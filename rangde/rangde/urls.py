@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from features.views import img, test
+from features.views import img, test, sendsms
 
 urlpatterns = [
     url(r'^img/', img),
+    url(r'^sendsms', sendsms),
     url(r'^test/', test),
     url(r'^admin/', admin.site.urls),
 ]
