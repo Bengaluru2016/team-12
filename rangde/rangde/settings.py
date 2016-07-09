@@ -70,6 +70,8 @@ TEMPLATES = [
     },
 ]
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 WSGI_APPLICATION = 'rangde.wsgi.application'
 
 
@@ -86,7 +88,6 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-
 
 
 # Password validation
@@ -107,14 +108,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-MAILCHIMP_API_KEY = ""
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
