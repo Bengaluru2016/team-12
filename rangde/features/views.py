@@ -43,7 +43,7 @@ def test(request):
     mail = smtplib.SMTP('smtp.gmail.com', 587)
     mail.ehlo()
     mail.starttls()
-    mail.login('safwan95@gmail.com', '@drog11lamps8')
+    mail.login('safwan95@gmail.com', '')
     mail.sendmail('safwan95@gmail.com', 'safwan95@gmail.com', msg.as_string())
     mail.close()
     return HttpResponse("email sent")
