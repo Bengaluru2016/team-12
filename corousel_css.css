@@ -1,0 +1,15 @@
+      <style>
+                .carousel{
+    background: #2f4357;
+    
+          min-width: 100%;
+          min-height: 750px;
+          max-height: 750px;
+    
+}
+.carousel .item img{
+          min-width: 100%;
+          min-height: 750px;
+          max-height: 750px;
+}
+</style>
