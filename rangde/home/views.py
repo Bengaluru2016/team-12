@@ -11,12 +11,12 @@ def seek_info(request):
         email = request.POST.get('email')
         mobile= request.POST.get('mobile')
         question = request.POST.get('question')
-        refer_name = None
+    
         
         seek_info_table.objects.create(visitor_name=visitor_name,
-                                       refer_name=refer_name,
                                        mobile_number=mobile,
-                                       email_id=email)
+                                       email_id=email,
+                                       question=question)
         
     return HttpResponseRedirect("/home/")
 
@@ -33,3 +33,11 @@ def refer_info(request):
                                         mobile_number=mobile_number,
                                         )
     return HttpResponseRedirect("/home/")
+
+def rangde_admin(request):
+    return render(request, "admin.html", {})
+
+def queries(request):
+    qs = seek_info_table.objects.all()
+
+    return render(request, "queries.html", {'qs' : qs})
