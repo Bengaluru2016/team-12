@@ -12,7 +12,7 @@ class investor_info_table(models.Model):
         
 class seek_info_table(models.Model):
     visitor_name = models.CharField(max_length=255, null=True, blank=True)
-    refer_name = models.CharField(max_length=255, null=True, blank=True)
+    question = models.CharField(max_length=255, null=True, blank=True)
     mobile_number = models.CharField(max_length=255, null=True, blank=True)
     email_id = models.CharField(max_length=255, null=True, blank=True)
     
