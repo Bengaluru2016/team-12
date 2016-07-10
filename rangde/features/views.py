@@ -6,7 +6,7 @@ from django.core.mail import EmailMessage
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from twilio.rest import TwilioRestClient
+#from twilio.rest import TwilioRestClient
 
 
 def sendsms(request):
