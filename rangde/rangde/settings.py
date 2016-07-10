@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'features',
+    'home'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'rangde.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ([os.path.join(CURRENT_PATH, 'features/templates')]),
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
