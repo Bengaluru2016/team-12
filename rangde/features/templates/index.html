@@ -311,7 +311,7 @@
                 <div class="modal-body">
                   <div class="form-group">
                     <label for="name" class="control-label">Name:</label>
-                    <input name="name" type="text" class="form-control">
+                    <input name="vistor_name" type="text" class="form-control">
                   </div>
                   <div class="form-group">
                     <label for="mobile" class="control-label">Mobile:</label>
@@ -343,24 +343,24 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 <h4 class="modal-title" id="exampleModalLabel">Refer a Friend</h4>
               </div>
-              <form action="/referfriend" method="post">
+              <form action="/refer_info/" method="post">{%csrf_token%}
 
                 <div class="modal-body">
                   <div class="form-group">
-                    <label for="name" class="control-label">Your Name: </label>
-                    <input type="text" class="form-control" placeholder="optional field">
+                    <label for="referrer_name" class="control-label">Your Name: </label>
+                    <input name="referrer_name" type="text" class="form-control" placeholder="optional field">
                   </div>
                   <div class="form-group">
-                    <label for="mobile" class="control-label">Name: </label>
-                    <input type="text" class="form-control">
+                    <label for="referred_name" class="control-label">Name: </label>
+                    <input name="referred_name" type="text" class="form-control">
                   </div>
                   <div class="form-group">
                     <label for="email" class="control-label">Email:</label>
-                    <input type="text" class="form-control">
+                    <input name="email" type="text" class="form-control">
                   </div>
                   <div class="form-group">
-                    <label for="question" class="control-label">Mobile:</label>
-                    <input type="text" class="form-control">
+                    <label for="mobile" class="control-label">Mobile:</label>
+                    <input name="mobile" type="text" class="form-control">
                   </div>
                   <div class="modal-footer">
                     <input type="submit" value="submit">
@@ -393,8 +393,8 @@
                   <div class="portfolio-caption">
                     <h4>MALABAI MUJMULE</h4>
                     <p class="text-muted">DIGRAS, MAHARASHTRA</p>
-                    <div class="fb-share-button" data-href="https://www.rangde.org/evaluation/microcredit/india/maharashtra/malabai---laxman-mujmule/39400" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rangde.org%2Fevaluation%2Fmicrocredit%2Findia%2Fmaharashtra%2Fmalabai---laxman-mujmule%2F39400&amp;src=sdkpreparse">Share</a></div>
                   </div>
+                    <div class="fb-share-button" data-href="https://www.rangde.org/evaluation/microcredit/india/maharashtra/malabai---laxman-mujmule/39400" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rangde.org%2Fevaluation%2Fmicrocredit%2Findia%2Fmaharashtra%2Fmalabai---laxman-mujmule%2F39400&amp;src=sdkpreparse">Share</a></div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
                   <a target="_blank" href="https://www.rangde.org/evaluation/microcredit/india/tamil-nadu/rajavairam-p/43122" class="portfolio-link" data-toggle="modal">
