@@ -7,7 +7,7 @@ def home_page(request):
 
 def seek_info(request):
     if request.POST:
-        visitor_name = request.POST.get('name')
+        visitor_name = request.POST.get('visitor_name')
         email = request.POST.get('email')
         mobile= request.POST.get('mobile')
         question = request.POST.get('question')
