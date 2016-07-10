@@ -16,10 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from features.views import img, test, sendsms
+from home.views import home_page, seek_info
 
 urlpatterns = [
     url(r'^img/', img),
     url(r'^sendsms', sendsms),
     url(r'^test/', test),
+    url(r'^home/', home_page),
+    url(r'^seek_info/', seek_info),
     url(r'^admin/', admin.site.urls),
 ]
